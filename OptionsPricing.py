@@ -58,11 +58,11 @@ class OptionPricing:
 
 if __name__ == "__main__":
 
-    S0=100					#underlying stock price at t=0
+    S0=70.3					#underlying stock price at t=0
     E=100					#strike price
     T = 1					#expiry
-    rf = 0.05				#risk-free rate
-    sigma=0.2				#volatility of the underlying stock
+    rf = 0.5				#risk-free rate
+    sigma=0.30				#volatility of the underlying stock
     iterations = 1000000	#number of iterations in the Monte-Carlo simulation
 
     model = OptionPricing(S0,E,T,rf,sigma,iterations)
